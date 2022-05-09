@@ -19,6 +19,8 @@ Features:
 
 ## Pi Smart Cam
 
+![Pi Stream Cam](./images/pi-smart-cam-featured.jpg) 
+
 
  | ![Pi Stream Cam](./images/open-nest-cam-promo-3-min.JPG) | ![Pi Stream Cam](./images/open-nest-cam-ports-back-min.JPG) |
  | -------------------------------------------------------- | ----------------------------------------------------------- |
