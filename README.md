@@ -34,13 +34,13 @@ Livestream Front Door
 
 Run Camera with PIR Sensor: `python3 ~/pi-smart-cam/code/examples/pi-camera-stream-pir-sensor/main.py`
 
-Examples Include: These Examples provide the building blocks to Build your own Pi Camera (Contribute to the Repo to build more examples!)
+These Examples provide the building blocks to Build your own Pi Camera (Contribute to the Repo to build more examples!)
 - pi-camera-stream-pir-sensor - Pi Camera Stream with PIR Sensor (and email notification)
 - video-usb-enabled - Pi Camera Stream, additional USB enabled Camera Support
 
 
-Step 2 – PIR Wiring & Electronics
-## Part List:
+## Step 2 – PIR Wiring & Electronics
+### Part List:
 
 -	Pi Electronics:
     - Raspberry Pi 4 
