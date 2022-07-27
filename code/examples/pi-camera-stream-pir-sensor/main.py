@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
 Modified by smartbuilds.io
-Date: 07.05.22
+Date: 26.07.22
 
 # main.py
 Desc: This web application serves a motion JPEG stream and sends an image
-notification to your email on motion detected via pir sensor
+notification to your email on motion detected via a PIR sensor
 
 # install the necessary packages
 """
@@ -59,7 +59,7 @@ if __name__ == '__main__':
         ser.reset_input_buffer()
         
         if ser:
-            # Create thread for parallel processing/ multithreading
+            # Create a thread for parallel processing/ multithreading (camera stream and PIR Sensor trigger)
             arduino_comms_thread = threading.Thread(target=arduino_pi_comms, args=(ser, sensitivity_timer, current_time, pi_email, pi_app_password, pi_port, pi_host, gen_capture(pi_camera)))
             arduino_comms_thread.daemon = True
             arduino_comms_thread.start()
