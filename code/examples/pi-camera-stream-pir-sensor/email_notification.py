@@ -42,9 +42,12 @@ def sendMessage(pi_email, pi_app_password, pi_port, pi_host, image):
 
         server = smtplib.SMTP_SSL(pi_host, pi_port)
         server.login(pi_email, pi_app_password)
-
+        print("Sending Notification.")
         server.sendmail(pi_email, notification_recipient, msgRoot.as_string())
         server.quit()
+        print("Notification Sent.")
+
     except:
-        print("Invalid sent message")
+        print("Notification not sent: Invalid email credentials")
+        return "Invalid email credentials"
 
