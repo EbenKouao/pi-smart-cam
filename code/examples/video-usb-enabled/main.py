@@ -1,3 +1,4 @@
+# Use ths example if you are using a USB Camera (instead of a pi cam)
 
 from flask import Flask, render_template, Response, request
 from camera import VideoCamera 
@@ -21,5 +22,5 @@ def video_feed():
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3009, debug=True, threaded=True)
+    app.run(host='0.0.0.0', port=5001, debug=True, threaded=True)
     # app.run(debug=True)
